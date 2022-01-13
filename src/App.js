@@ -1,7 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-const estilo = (bg = "#333") => ({
+const estilo2 = {
+  boxShadow: "0 5px 3px rgba(0,0,0,0.5)",
+};
+
+const estilo = ({ bg = "#333" }) => ({
   backgroundColor: bg,
   color: "#fff",
   padding: "10px 15px",
@@ -9,7 +13,7 @@ const estilo = (bg = "#333") => ({
 });
 const Li = ({ children }) => {
   return (
-    <li style={estilo()} className="clase-li">
+    <li style={{ ...estilo2, ...estilo({ bg: "#333" }) }} className="clase-li">
       {children}
     </li>
   );
@@ -18,7 +22,7 @@ const Li = ({ children }) => {
 function App() {
   const valor = "triste";
   return (
-    <ul style={estilo()} className="clase-css">
+    <ul style={estilo({ bg: "#750" })} className="clase-css">
       <Li estado="feliz">valor de li</Li>
     </ul>
   );
