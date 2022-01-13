@@ -11,7 +11,10 @@ import reportWebVitals from "./reportWebVitals";
   document.getElementById("root")
 ); */
 
-ReactDOM.render("lala", document.getElementById("root"));
+//<p>hola mundo</p>
+const X = () => <p>Hola mundo</p>;
+
+ReactDOM.render(<X />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
