@@ -12,7 +12,22 @@ import reportWebVitals from "./reportWebVitals";
 ); */
 
 //<p>hola mundo</p>
-const X = () => <p>Hola mundo</p>;
+
+const Li = ({ children, estado }) => (
+  <li>
+    {children} estoy {estado}
+  </li>
+);
+
+const X = () => (
+  <ul>
+    <Li estado={"feliz"} casa={false} edad={24}>
+      Chanchito
+    </Li>
+    <li>chanchito triste</li>
+    <li>Felipe</li>
+  </ul>
+);
 
 ReactDOM.render(<X />, document.getElementById("root"));
 
