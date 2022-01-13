@@ -4,16 +4,16 @@ import "./index.css";
 //import App from './App';
 import reportWebVitals from "./reportWebVitals";
 
-/* ReactDOM.render(
+ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
   document.getElementById("root")
-); */
+);
 
 //<p>hola mundo</p>
 
-const Li = ({ children, estado, casa, edad }) => {
+/* const Li = ({ children, estado, casa, edad }) => {
   console.log(casa, edad);
   return (
     <li>
@@ -31,8 +31,7 @@ const X = () => (
     <Li estado={"emocionado"}>Felipe</Li>
   </ul>
 );
-
-ReactDOM.render(<X />, document.getElementById("root"));
+ReactDOM.render(<X />, document.getElementById("root")); */
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
