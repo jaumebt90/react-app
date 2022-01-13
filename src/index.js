@@ -13,19 +13,22 @@ import reportWebVitals from "./reportWebVitals";
 
 //<p>hola mundo</p>
 
-const Li = ({ children, estado }) => (
-  <li>
-    {children} estoy {estado}
-  </li>
-);
+const Li = ({ children, estado, casa, edad }) => {
+  console.log(casa, edad);
+  return (
+    <li>
+      {children} estoy {estado}
+    </li>
+  );
+};
 
 const X = () => (
   <ul>
     <Li estado={"feliz"} casa={false} edad={24}>
       Chanchito
     </Li>
-    <li>chanchito triste</li>
-    <li>Felipe</li>
+    <Li estado={"triste"}>chanchito</Li>
+    <Li estado={"emocionado"}>Felipe</Li>
   </ul>
 );
 
