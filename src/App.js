@@ -9,9 +9,15 @@ class Button extends Component {
   componentDidMount() {
     console.log("componentDidMount");
   }
+  componentDidUpdate(prevProps, prevState) {
+    console.log("component did update", prevProps, prevState);
+  }
+
+  componentWillUnmount() {}
+
   render() {
     console.log("ejecutando render");
-    return <button>Enviar</button>;
+    return <button onClick={() => this.setState({ prop: 1 })}>Enviar</button>;
   }
 }
 
