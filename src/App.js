@@ -1,5 +1,12 @@
 import { Component } from "react";
 
+class Button extends Component {
+  render() {
+    console.log("ejecutando render");
+    return <button>Enviar</button>;
+  }
+}
+
 class App extends Component {
   state = { valor: 3 };
   render() {
@@ -7,11 +14,12 @@ class App extends Component {
     return (
       <div>
         <p>Hola mundo</p>
+        <Button />
         <button
           className={`{this.state.valor}`}
           onClick={() => this.setState({ valor: 2 })}
         >
-          Enviar
+          Enviar en App
         </button>
       </div>
     );
